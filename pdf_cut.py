@@ -192,6 +192,21 @@ class PDFCutWindow(FluentWindow):
         hbox.addStretch(1)
         root.addLayout(hbox)
 
+        # GitHub 链接
+        gh = BodyLabel()
+        gh.setText("GitHub：")
+        gh.setStyleSheet("font-size: 15px;")
+        gh_link = HyperlinkLabel()
+        gh_link.setText("github.com/osdepk001/PDFCut")
+        gh_link.setUrl("https://github.com/osdepk001/PDFCut.git")
+        gh_box = QHBoxLayout()
+        gh_box.setContentsMargins(0, 0, 0, 0)
+        gh_box.setSpacing(2)
+        gh_box.addWidget(gh)
+        gh_box.addWidget(gh_link)
+        gh_box.addStretch(1)
+        root.addLayout(gh_box)
+
         # 协议
         lic = BodyLabel()
         lic.setText("协议：本应用遵循 MIT 开源协议")
