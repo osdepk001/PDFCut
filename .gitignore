@@ -1,0 +1,20 @@
+# 打包产物
+dist/
+build/
+*.spec
+
+# Python
+__pycache__/
+*.pyc
+
+# 临时文件
+_t.py
+_ui.py
+_about.py
+_check.py
+_smoke_test.py
+make_ico.py
+
+# 测试PDF
+test_*.pdf
+t*.pdf
